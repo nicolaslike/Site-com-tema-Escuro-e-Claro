@@ -1,0 +1,59 @@
+:root{ /* Seletor HTML, se aplica apenas ao HTML */
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Seletor geral, se aplica em tudo */
+*{
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body{
+    background: var(--bg);
+}
+
+/* listas */
+ul{
+    font-family: Helvetica;
+}
+
+li {
+    list-style: circle;    
+}
+
+/* Seletores Classe */
+.list {
+    list-style: square;
+}
+
+.botão{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--botãofontColor);
+    background-color: var(--botãobg);
+} .botão:focus{outline-style: none;}
+
+/* Seletores de ID */
+
+/* Classe Tema Claro */
+.tema-claro {
+    --bg:var(--green);
+    --fontColor:var(--black);
+    --botãobg:var(--black);
+    --botãofontColor:var(--white);
+}
+
+/* Classe Tema Escuro */
+.tema-escuro{
+    --bg:var(--black);
+    --fontColor:var(--green);
+    --botãobg:var(--white);
+    --botãofontColor:var(--black);
+}
